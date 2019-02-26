@@ -17,3 +17,35 @@ console.log("Print all numbers divisible by 5 and 3 between 5 and 50");
 for(var i=5;i<=50;i++){
 	if(i%3==0 && i%5==0){console.log(i);}
 }
+
+//SAME AS THE ONE ON TOP BUT WITH THE WHILE LOOP
+var exercise1=-10;
+console.log("Print all numbers between -10 and 19");
+while(exercise1<=19){
+	console.log(exercise1);
+	exercise1++;
+}
+var evenNum=10;
+console.log("Print all even numbers between 10 and 40");
+while(evenNum<=40){
+	if((evenNum%2)==0){
+		console.log(evenNum);
+	}
+	evenNum++;
+}
+console.log("Print all odd numbers between 300 and 333");
+var oddNum=300;
+while(oddNum<=333){
+	if((oddNum%2)!=0){
+		console.log(oddNum);
+	}
+	oddNum++;
+}
+console.log("Print all numbers divisible by 5 AND 3 between 5 and 50");
+var lots=5;
+while(lots<=50){
+	if((lots%5)==0 && (lots%3)==0){
+		console.log(lots);
+	}
+	lots++;
+}
