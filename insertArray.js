@@ -10,5 +10,6 @@ window.setTimeout(function(){
 		else if(ans==="list"){
 			console.log(list);
 		}
+		else{prompt("Enter a valid option");}
 }
 },500);
