@@ -37,13 +37,22 @@ window.setTimeout(function(){
 //ADDING CODE TO SEE IF THE ENTERED ARRAY IS MADE ONLY OUT OF THE SAME NUMBER OR LETTER OR STRING
 
 else if(option==="uniform"){
+	for(var i=0;i<list.length-1;i++){
+		if(list[i]===list[i+1]){flag=1;}
+		else{flag=0; i=list.length}
+	}
 
-			for(var i=0;i<list.length-1;i++){
-					if(list[i]===list[i+1]){flag=1;}
-					else{flag=0; i=list.length}
-				}
-			
 
-			if(flag==1){console.log("Uniform");}
-			else{console.log("Not uniform");}
-		}
+	if(flag==1){console.log("Uniform");}
+	else{console.log("Not uniform");}
+}
+
+//ADDING CODE TO ADD ALL THE ITEMS OF THE ARRAY
+else if(option==="sum"){
+	var suma=0;
+	for(var i=0;i<list.length;i++){
+		var x=parseInt(list[i]);
+		suma=suma+x;
+	}
+	console.log(suma);
+}
