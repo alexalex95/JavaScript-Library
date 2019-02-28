@@ -56,3 +56,12 @@ else if(option==="sum"){
 	}
 	console.log(suma);
 }
+
+//ADDING CODE TO CHECK THE MAXIMUM ELEMENT OF AN ARRAY OF NUMBERS
+else if(option==="max"){
+	var maxi=parseInt(list[0]);
+	for(var i=0;i<list.length;i++){
+		if(parseInt(list[i])>=maxi){maxi=parseInt(list[i]);}
+	}
+	console.log("The maximum value of the array is: "+maxi);
+}
