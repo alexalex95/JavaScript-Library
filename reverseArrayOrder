@@ -1,0 +1,35 @@
+var list=[];
+var option="";
+window.setTimeout(function(){
+
+	while(option!="quit"){
+		option=prompt("What do you wanna do?");
+		if(option==="new"){
+			var itm=prompt("Type the item you wanna add");
+			list.push(itm);
+			console.log("Item added");
+		}
+		else if(option==="list"){
+			console.log("**********");
+			list.forEach(function(lists,i){
+				console.log(i+": "+lists);
+			});
+			console.log("**********");
+		}
+    //THE IMPORTANT CODE IS HERE
+    //in the For, it takes the length of the array for the stop of the for function
+    //Then, in the console.log, it gets the item of the list[] where the list.lenght-i-1 is set
+    //That means, the item 0 is added to the length of the array (for instance 4) 
+    //but it substracts the iterator i (in the first case is 0) and also 1 (so it moves because it starts in 0)
+    //so the 1st iteration is list[4-0-1] = list[3] so the index 3 of the list is printed
+		else if(option==="reverse"){
+			console.log("**********");
+			for(var i=0;i<list.length;i++){
+				console.log(i+": "+list[list.length-i-1]);
+			}
+			console.log("**********");
+		}
+
+	}
+
+},500)
