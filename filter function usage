@@ -1,0 +1,22 @@
+//File using the filter() 
+
+//Creating an array
+
+var animals = new Object();
+animals=[
+{animal:"cat",sound:"Meow",loveMeter:10},
+{animal:"dog",sound:"Woof",lovemeter:2},
+{animal:"Fish",sound:"Glu",lovemeter:5}
+];
+
+//GET THE VALUE OF DOG
+
+//using for loop
+for(int i=0;i<=animals.lenght;i++){
+if(animals[i].animal=="dog"){
+  console.log("We found the dog, it goes "+animals[i].sound+" and it loves you this much: "+animals[i].loveMeter);
+}
+}
+
+//using filter()
+let findAnimal=animals.filter(pet => pet.animal==="dog");
